@@ -1,0 +1,30 @@
+@mixin display_setting($flex-dir,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin bg_image($url,$size,$repeat,$bg_pos){
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $bg_pos;
+}
+
+@mixin dimension($height,$width){
+    height: $height;
+    width: $width;
+}
+
+@mixin button_design($bg-color,$bo-rad,$color,$fSize,$fWeight,$padding_y,$padding_x){
+    border: none;
+    background-color: $bg-color;
+    border-radius: $bo-rad;
+    color: $color;
+    font-family: 'Poppins', sans-serif;
+    font-size: $fSize;
+    font-weight: $fWeight;
+    padding: $padding_y $padding_x;
+}
